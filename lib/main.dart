@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project_catalog/pages/home_page.dart';
 import 'package:flutter_project_catalog/pages/login_page.dart';
+import 'package:flutter_project_catalog/utils/routes.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
     // var day = "Tuesday";
     // const pi = 3.142;
     return MaterialApp(
+      // debugShowCheckedModeBanner: false,
       // home: HomePage(),
       themeMode:ThemeMode.light,//type dark remove light
       theme: ThemeData(primarySwatch:Colors.green),
@@ -21,8 +23,8 @@ class MyApp extends StatelessWidget {
       // initialRoute: "/",
       routes: {
         "/":(context) => LoginPage(),
-        "/home":(context) => HomePage(),
-        "/login":(context) => LoginPage(),
+        MyRoutes.homeRoute:(context) => HomePage(),
+        MyRoutes.loginRoute:(context) => LoginPage(),
       },//map in flutter, dictionary in python, json in js, hover over route
     );
   }
