@@ -1,14 +1,29 @@
+class CatalogModel {
+  static final items = [
+    Item(
+        id: 1,
+        name: "Iphone 12 pro",
+        desc: "4th generation",
+        price: 999,
+        color: "#33505a",
+        image: "imagw"),
+            Item(
+        id: 1,
+        name: "Iphone 12 pro",
+        desc: "4th generation",
+        price: 999,
+        color: "#33505a",
+        image: "imagw")
+  ];
+}
+
 class Item {
-  final String id;
+  final int id;
   final String name;
   final String desc;
   final num price;
   final String color;
   final String image;
 //curly braces ka scene
-  Item(this.id, this.name, this.desc, this.price, this.color, this.image);
+  Item({required this.id, required this.name, required this.desc, required this.price, required this.color, required this.image});
 }
-
-final products = [
-  Item("codepur0", "Iphone 12 pro", "4th generation", 999, "#33505a", "image")
-];
