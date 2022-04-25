@@ -7,7 +7,7 @@ class CatalogModel {
         price: 999,
         color: "#33505a",
         image: "imagw"),
-            Item(
+    Item(
         id: 1,
         name: "Iphone 12 pro",
         desc: "4th generation",
@@ -25,5 +25,11 @@ class Item {
   final String color;
   final String image;
 //curly braces ka scene
-  Item({required this.id, required this.name, required this.desc, required this.price, required this.color, required this.image});
+  Item(
+      {required this.id,
+      required this.name,
+      required this.desc,
+      required this.price,
+      required this.color,
+      required this.image});
 }
