@@ -59,10 +59,8 @@ class _HomePageState extends State<HomePage> {
                 CatalogHeader(),
                 if (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
                   CatalogList().expand()
-                else
-                  Center(
-                    child: CircularProgressIndicator(),
-                  )
+                else CircularProgressIndicator().centered().expand(),
+                  
               ],
             ),
           ),
